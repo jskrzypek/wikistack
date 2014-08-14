@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+<!-- maybe implement https://github.com/madrobby/keymaster -->
+
+{% block content %}
+<h2>EDIT A PAGE</h2>
+<!-- <h1>{{title}}</h1> -->
+<hr>
+<form action='/edit/submit/{{ url_name }}' method='post'>
+
+  <label for="page-edit-title">PAGE TITLE</label>
+  <input name="title" type="text" id="page-edit-title" class="form-control" value="{{ title }}">
+  <label for="page-edit-content">PAGE CONTENT</label>
+  <textarea name="body" class="form-control" rows="15">{{ body }}</textarea>
+  <button type="submit" id="page-edit-content" class="btn btn-info">Submit</button>
+
+</form>
+{% endblock %}

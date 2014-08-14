@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+<!-- maybe implement https://github.com/madrobby/keymaster -->
+
+{% block content %}
+<h2>ADD A PAGE</h2>
+<!-- <h1>{{title}}</h1> -->
+<hr>
+<form action='/add/submit' method='post'>
+
+  <label for="page-add-title">PAGE TITLE</label>
+  <input name="title" type="text" id="page-add-title" class="form-control" placeholder="Your page's title.">
+  <label for="page-add-content">PAGE CONTENT</label>
+  <textarea name="body" class="form-control" rows="3" placeholder="{{}}"></textarea>
+  <button type="submit" id="page-add-content" class="btn btn-info">Submit</button>
+
+</form>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1 class="main-header">{{title}}</h1>
+
+<hr>
+<a href="/edit/{{ url_name }}" alt="Edit this page.">Edit</a>
+<a href="/delete/{{ url_name }}" alt="Delete this page.">Delete</a>
+
+{{ body|marked }}
+
+<!-- <button class="btn btn-info" href="/edit/{{ url_name }}" alt="Edit this page.">Edit</button>
+ -->
+{% endblock %}

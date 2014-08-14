@@ -1,0 +1,36 @@
+body {
+  
+}
+
+a {
+  color: #00B7FF;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+}
+
+nav {
+	font-family: 'Raleway', sans-serif;
+}
+
+.navbar-brand {
+	text-transform: uppercase;
+	font-weight: 700;
+	/*letter-spacing: 2px;*/
+}
+
+footer {
+	padding-top: 50px;
+}
+
+.footer-content {
+	color: #999
+}
+
+/* add_page */
+
+input, textarea {
+	margin-bottom: 20px;
+}
